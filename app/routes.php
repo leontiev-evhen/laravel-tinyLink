@@ -15,3 +15,4 @@
 Route::get('/', 'IndexController@showIndex');
 Route::post('make-url', 'IndexController@postUrl');
 Route::get('/{id}', 'IndexController@getRedirect');
+Route::controller('auth', 'AuthController');

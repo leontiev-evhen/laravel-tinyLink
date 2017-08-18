@@ -7,5 +7,8 @@
                 <p>{{{$errors->first('url')}}}</p>
             @endif
         </form>
+        @if(Auth::check())
+        <a href="{{URL::to('auth/logout')}}">Logout</a>
+        @endif
     </body>
 </html>
